@@ -19,8 +19,22 @@ function chooseLetter (letter) {
 
 function newQuestion () {
 // load questions
+
 // load letters to be guessed
+// load answer textboxes 
 // reset alphabet buttons to active
+}
+
+function txtBoxLetter() {
+// create textbox for the letter
+}	
+
+function mainGame () {
+// function to pull document for questions
+// function to put question to textbox
+// function to create individual textboxes for letters
+// function to load remaining alphabet letters options
+
 }
 
 </script>
