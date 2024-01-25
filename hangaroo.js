@@ -30,7 +30,10 @@ function txtBoxLetter() {
 }	
 
 function mainGame () {
-// function to pull document for questions
+// game functions per line of document
+
+// function to pull document 
+// iterate line 
 // function to put question to textbox
 // function to create individual textboxes for letters
 // function to load remaining alphabet letters options
