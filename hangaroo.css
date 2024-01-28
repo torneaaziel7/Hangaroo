@@ -46,3 +46,37 @@ button {
   cursor: pointer;
 }
 
+#guessed-word-container {
+  display: flex;
+  align-items: center;
+}
+
+#guessed-word {
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+#input-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#user-input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+#submit-button {
+  padding: 8px;
+  font-size: 16px;
+  background-color: #2ecc71;
+  color: #fff;
+  border: round;
+  cursor: pointer;
+  margin-left: 10px;
+}
+

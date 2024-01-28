@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #ffcc80; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; 
+}
+
+#game-container {
+  max-width: 600px;
+  background-color: #ffcc80;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+#hangman-container {
+  margin-top: 30px;
+}
+
+#word-display {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#letter-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.letter-choice {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #3498db; 
+  color: #fff; /* White text color */
+  cursor: pointer;
+  border-radius: 5px; 
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+button:hover {
+  background-color: #27ae60; 
+}
+
+#guessed-word-container {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#guessed-word {
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid #3498db; 
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+#input-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#user-input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #3498db; 
+  border-radius: 5px;
+}
+
+#submit-button {
+  padding: 8px;
+  font-size: 16px;
+  background-color: #3498db; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease; 
+}
+
+#logo {
+  position: absolute;
+  top: 60px; 
+  left: 50%; /* Center the logo horizontally */
+  transform: translateX(-50%); 
+  max-width: 100px; 
+  height: auto;
+}
+
+#submit-button:hover {
+  background-color: #2980b9; 
+}
