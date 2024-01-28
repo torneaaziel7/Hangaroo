@@ -1,0 +1,10 @@
+What input device is commonly used to move the cursor on a computer screen?/Mouse
+What programming language is named after a particular kind of snake?/Python
+What programming language usually used for game development?/C++
+What do you call of the process of fixing errors in a code?/Debugging
+What do you call a piece of software that enhance a web browser’s functionality/Extension
+What programming language that is primarily used for mobile applications?/Java
+What does "WWW" stand for?/World Wide Web
+Who invented JavaScript?/Brendan Eich
+What do you call a group of linked data that are arranged so they can be efficiently retrieved?/Database
+What Year is the first revision of JavaScript?/2009

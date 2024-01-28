@@ -1,0 +1,6 @@
+What does CND stand for in Bootstrap?/Content Delivery Network
+Which functional programming language is designed to construct dependable and scalable applications and was created by Microsoft?/F#
+What's the name of the programming approach that lets one object inherit the actions and properties of another?/Inheritance
+What JavaScript framework, developed by Facebook, is commonly used for building user interfaces in single-page applications?/React/ React JS
+What programming language, developed by JetBrains, is designed to be concise, expressive, and interoperable with existing Java code?/Kotlin
+Which approach to software development places the most emphasis on gradual and iterative development together with regular plan revision and assessment?/Agile
