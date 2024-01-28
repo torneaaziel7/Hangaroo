@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangaroo Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="guesses-container">
+    <button class="guess-button" id="guess-1">X</button>
+    <button class="guess-button" id="guess-2">X</button>
+    <button class="guess-button" id="guess-3">X</button>
+</div>
+
+<div id="game-container">
+    <h2>Hangaroo Game</h2>
+    <div id="word-display"></div>
+    <div id="attempts"></div>
+    <div id="letter-buttons"></div>
+    <div id="message"></div>
+    <div id="points">Points: 0</div>
+    <button id="clue-button" class="game-button">Get Clue</button>
+    <div id="level-buttons">
+        <button onclick="setLevel('easy')" class="game-button easy-button">Easy</button>
+        <button onclick="setLevel('difficult')" class="game-button difficult-button">Difficult</button>
+        <button onclick="setLevel('expert')" class="game-button expert-button">Expert</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
