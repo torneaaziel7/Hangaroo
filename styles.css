@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Arial', sans-serif;
     background: url(wood.jpg);
@@ -6,101 +7,165 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center; 
     height: 100vh;
 }
+
 
 #guesses-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 140px; /* Adjust the margin-top value according to your preference */
 }
 
 .guess-button {
-    width: 60px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 8px;
-    margin: 5px;
-    font-size: 16px;
+    width: 100px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 16px;
+    margin: 15px;
+    font-size: 30px;
     cursor: pointer;
-    background-color: rgb(55, 23, 130); 
+    background-color: rgb(0, 0, 0);
     color: #ffffff;
     border: none;
     transition: background-color 0.3s;
 }
 
 .guess-button.highlighted {
-    background-color: #c0392b; 
+    background-color: #c0392b;
 }
+
+
 
 #game-container {
-    max-width: 400px;
+    max-width: 600px;
+    max-height: 500px;
     background-color: rgb(227, 148, 3);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 40px;
+    border-radius: 25px;
     color: #ffffff;
+    margin: 0 auto; 
+    font-size: 36px;
 }
 
+
 #word-display {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
 }
 
 #word-display span {
     display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 8px;
-    margin: 0 5px;
-    background-color: #ecf0f1; 
-    color: #2c3e50; 
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 16px;
+    margin: 0 15px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
     text-align: center;
+    font-size: 50px;
 }
 
+
 #attempts {
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 30px;
 }
+
 
 #letter-buttons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 20px;
 }
 
+.letter-button {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 16px;
+    margin: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+
 .game-button {
-    width: 100px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 8px;
-    margin: 5px;
+    width: 150px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 16px;
+    margin: 15px;
     padding: 0;
-    font-size: 14px;
+    font-size: 24px;
     cursor: pointer;
     border: none;
 }
 
-.easy-button {
-    background-color: #2ecc71;
-    color: #ffffff;
-}
-
-.difficult-button {
-    background-color: #e74c3c;
-    color: #ffffff;
-}
-
-.expert-button {
-    background-color: #3498db;
-    color: #ffffff;
-}
 
 #message {
-    font-size: 16px;
-    margin-top: 20px;
+    font-size: 30px;
+    margin-top: 50px;
 }
+
+.question-container {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(227, 148, 3);
+    text-align: center;
+    margin-bottom:-70px; 
+    width: 600px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+.question-container h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.question-content {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
