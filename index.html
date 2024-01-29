@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangaroo Game</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="questions.css">
 </head>
 <body>
+
+<div id="question-container" class="question-container">
+    <h2>Question</h2>
+    <div class="question-content">
+        <!-- The current question will be dynamically inserted here -->
+    </div>
+</div>
 
 <div id="guesses-container">
     <button class="guess-button" id="guess-1">X</button>
@@ -22,10 +30,14 @@
     <div id="message"></div>
     <div id="points">Points: 0</div>
     <button id="clue-button" class="game-button">Get Clue</button>
-    <div id="level-buttons">
-        <button onclick="setLevel('easy')" class="game-button easy-button">Easy</button>
-        <button onclick="setLevel('difficult')" class="game-button difficult-button">Difficult</button>
-        <button onclick="setLevel('expert')" class="game-button expert-button">Expert</button>
+</div>
+
+<!-- Game End Modal -->
+<div id="game-end-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="end-game-message"></h2>
+        <p id="end-game-score"></p>
     </div>
 </div>
 
@@ -33,5 +45,3 @@
 
 </body>
 </html>
-
-
