@@ -51,12 +51,18 @@ function updateLetterButtons() {
         const button = document.createElement('button');
         button.innerText = letter;
         button.className = 'button';
-        button.onclick = function() { checkGuess(letter); };
+        button.onclick = function () { checkGuess(letter); };
+        
+        
+        if (guessWord.includes(letter)) {
+            button.disabled = true;
+        }
+
         letterButtonsContainer.appendChild(button);
     }
 
     const clueButton = document.getElementById('clue-button');
-    clueButton.onclick = function() { getClue(); };
+    clueButton.onclick = function () { getClue(); };
 }
 function updateGuessButtons() {
     const guessButtons = document.querySelectorAll('.guess-button');
@@ -95,21 +101,16 @@ function getClue() {
     if (cluesUsed < 3 && points >= 25) {
         const unrevealedIndex = guessWord.findIndex(letter => letter === '_');
         if (unrevealedIndex !== -1) {
-            const isConsonant = Math.random() < 0.5; 
-            if (isConsonant) {
-                guessWord[unrevealedIndex] = revealConsonant(secretWord[unrevealedIndex]);
-            } else {
-                guessWord[unrevealedIndex] = revealVowel(secretWord[unrevealedIndex]);
-            }
+            guessWord[unrevealedIndex] = secretWord[unrevealedIndex];
             points -= 25;
             cluesUsed++;
             displayMessage(`Clue revealed! You have earned a clue for 25 points.`);
-            updateDisplay(); 
         }
     } else {
         const message = cluesUsed >= 3 ? "You've already used all your clues." : "You don't have enough points for a clue.";
         displayMessage(message);
     }
+    updateDisplay();
 }
 
 
