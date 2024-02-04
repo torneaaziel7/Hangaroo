@@ -99,22 +99,9 @@ function checkGuess(guess) {
 
 function getClue() {
     if (cluesUsed < 3 && points >= 25) {
-        const unrevealedIndices = guessWord.reduce((indices, letter, index) => {
-            if (letter === '_') {
-                indices.push(index);
-            }
-            return indices;
-        }, []);
-
-        if (unrevealedIndices.length > 0) {
-            const randomIndex = unrevealedIndices[Math.floor(Math.random() * unrevealedIndices.length)];
-            guessWord[randomIndex] = secretWord[randomIndex];
-            unrevealedIndices.forEach(index => {
-                if (index !== randomIndex && secretWord[index] === secretWord[randomIndex]) {
-                    guessWord[index] = secretWord[index];
-                }
-            });
-
+        const unrevealedIndex = guessWord.findIndex(letter => letter === '_');
+        if (unrevealedIndex !== -1) {
+            guessWord[unrevealedIndex] = secretWord[unrevealedIndex];
             points -= 25;
             cluesUsed++;
             displayMessage(`Clue revealed! You have earned a clue for 25 points.`);
@@ -125,6 +112,7 @@ function getClue() {
     }
     updateDisplay();
 }
+
 
 function revealConsonant(letter) {
     const consonants = "BCDFGHJKLMNPQRSTVWXYZ";
